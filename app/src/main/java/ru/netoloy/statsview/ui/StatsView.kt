@@ -109,7 +109,7 @@ class StatsView @JvmOverloads constructor(
             startAngle += angle
         }
         paint.color = colors[0]
-       canvas.drawArc(oval, startAngle, 8F , false, paint)
+       canvas.drawArc(oval, startAngle, 1F , false, paint)
         // canvas.drawCircle(center.x, center.y, radius, paint)
         // отрисовка текста
         canvas.drawText(
