@@ -31,11 +31,11 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     override fun onAnimationEnd(animation: Animation?) {
-                        textView.setText("onAnimationStart")
+                        textView.setText("onAnimationEnd")
                     }
 
                     override fun onAnimationRepeat(animation: Animation?) {
-                        textView.setText("onAnimationStart")
+                        textView.setText("onAnimationReapeat")
                     }
                 })
             }
