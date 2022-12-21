@@ -46,7 +46,13 @@ class StatsView @JvmOverloads constructor(
         }
     }
 
-    var data: List<Float> = emptyList()
+    var data: List<Float> =  listOf(
+        0.25F,
+        0.25F,
+        0.25F,
+        0.25F,
+    )
+
         set(value) {
             field = value
             invalidate()
