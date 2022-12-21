@@ -6,19 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ru.netoloy.statsview.ui.StatsView
-        android:id="@+id/statsView"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        app:color1="#6200EE"
-        app:color2="#939124"
-        app:color3="#182957"
-        app:color4="#FF0266"
+    <FrameLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:lineWidth="16dp"
-        app:textSize="30sp" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/start_scene" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Go"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
